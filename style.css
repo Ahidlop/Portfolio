@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --color-bg: #a6d6fd;
+    --color-primary: #6f9dff;
+    --color-secondary: #9fd1ff;
+    --color-dark: #333;
+    --color-light: #fff;
+    --color-gray: #777;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-dark);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* header */
+.header {
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    max-height: 5rem;
+}
+.headerLinks{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    align-items: center;
+}
+.headerLinks a {
+    text-decoration: none;
+    color: var(--color-dark);
+    margin: 0 1rem;
+    transition: var(--transition);
+}
+
+.headerLinks a:hover {
+    color: var(--color-primary);
+}
+
+
+.curriculum {
+    background: var(--color-primary);
+    color: var(--color-light);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: var(--transition);
+}
+
+.curriculum:hover {
+    background: var(--color-secondary);
+}
+
+.mainSection {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 2rem;
+    flex-wrap: wrap;
+    max-height: 70rem;
+}
+.introData{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    max-width: 60%;
+}
+.introData h1 {
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+
+.description, .aboutText {
+    margin: 1rem;
+}
+
+.reachMeIntro{
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-light);
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: var(--transition);
+    max-width: 25rem;
+}
+.reachMeIntro:hover {
+    background-color: #3c75f1;
+}
+
+.logoIntro{
+    border-radius: 20%;
+    max-height: 30rem;
+}
+
+.reachMe {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-light);
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.reachMe:hover {
+    background: var(--color-secondary);
+}
+
+.img-main-logo {
+    max-width: 300px;
+}
+
+/* sections */
+section {
+    padding: 3rem 2rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+
+/* Projects */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.project {
+    background: var(--color-light);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    margin-bottom: 0rem;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-data {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.project-title {
+    color: var(--color-primary);
+}
+
+.projectTags {
+    display: flex;   
+    gap:0.4rem; 
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: var(--color-bg);
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+/*Contact*/
+.icons {
+    max-height: 5rem;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:3rem;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    height: 5.5rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--color-light);
+    color: var(--color-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-main-logo {
+    margin-top: 2rem;
+  }
+}

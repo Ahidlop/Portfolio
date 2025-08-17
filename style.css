@@ -128,11 +128,21 @@ body {
     flex: 0 0 auto;
 }
 
+.logoIntro{
+    border-radius: 20%;
+    max-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
 .reachMeIntro{
     display: inline-block;
     background: var(--color-primary);
     color: var(--color-light);
-    padding: 0.7rem 1.5rem;
+    padding: 0.7rem 5rem;
     border-radius: 25px;
     text-decoration: none;
     transition: var(--transition);
@@ -140,18 +150,6 @@ body {
 }
 .reachMeIntro:hover {
     background-color: #3c75f1;
-}
-
-.logoIntro{
-    border-radius: 20%;
-    max-height: 30rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.img-main-logo {
-    max-width: 300px;
 }
 
 /* sections */
@@ -166,39 +164,43 @@ h1 {
 
 
 /* Projects */
-.projects-container {
+.projectsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
+}
+
+.projectsTitle{
+    color: var(--color-dark);
 }
 
 .project {
     background: var(--color-light);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: var(--transition);
-    margin-bottom: 0rem;
 }
 
 .project:hover {
     transform: translateY(-5px);
 }
 
-.project-data {
-    padding: 1.5rem;
+.projectData {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap:1rem;
     height: 100%;
 }
 
-.project-title {
+.projectTitle {
     color: var(--color-primary);
 }
 
 .projectTags {
     display: flex;   
+    justify-content: center;
     gap:0.4rem; 
     flex-wrap: wrap;
 }
@@ -218,6 +220,7 @@ h1 {
     align-items: center;
     gap: 1rem;
     padding: 2rem;
+    
 
 }
 .icons {
@@ -230,7 +233,7 @@ h1 {
 }
 
 .icon:hover {
-    transform: scale(1.125);
+    transform: translateY(-5px);
 }
 
 .git{

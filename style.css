@@ -254,13 +254,88 @@ h1 {
 
 
 
-@media (max-width: 768px) {
-  .intro {
-    flex-direction: column;
-    text-align: center;
-  }
+/* Tablet*/
+@media (max-width: 1024px) and (min-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
 
-  .img-main-logo {
-    margin-top: 2rem;
-  }
+    .headerLinks {
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .intro {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .introData {
+        max-width: 100%;
+    }
+
+    .logoIntro {
+        max-height: 20rem;
+    }
+
+    .logoIntro img{
+        display: none;
+    }
+
+    .projectsContainer {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    .icons {
+        gap: 5rem;
+    }
 }
+
+/* Movil */
+@media (max-width: 767px) {
+    .intro {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .introData {
+        max-width: 100%;
+    }
+
+    .introBox {
+        padding: 2rem 1rem;
+    }
+
+    .introBox h1 {
+        font-size: 1.5rem;
+    }
+
+    .logoIntro img{
+        display: none;
+    }
+
+    .projectsContainer {
+
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .technologies svg, .technologie {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .icons {
+        gap: 2rem;
+    }
+
+    .reachMeIntro {
+        padding: 0.5rem 3rem;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+

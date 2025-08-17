@@ -1,4 +1,4 @@
-gsap.from(".intro", { 
+gsap.from(".introBox", { 
   duration: 1, 
   y: -200, 
   opacity: 0, 

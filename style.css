@@ -92,6 +92,9 @@ body {
     color: var(--color-primary);
     text-align: center;
 }
+.logoHead{
+    display: none;
+}
 .intro{
     display: flex;
     flex-direction: row;
@@ -252,7 +255,16 @@ h1 {
     .headerLinks {
         width: 100%;
     }
-
+    .titleBox{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .logoHead{
+        display: flex;
+        width: 9rem;
+        border-radius: 40%;
+    }
     .intro {
         flex-direction: column;
         gap: 1.5rem;
@@ -274,6 +286,7 @@ h1 {
     .icons {
         gap: 6rem;
     }
+    
 }
 
 /* Movil */
@@ -292,6 +305,16 @@ h1 {
 
     .curriculum{
         padding: 0;
+    }
+    .titleBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoHead{
+        display: flex;
+        width: 9rem;
+        border-radius: 40%;
     }
 
     h2, .aboutMeTitle{

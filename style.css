@@ -38,7 +38,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    max-height: 5rem;
+    max-height: 2rem;
 }
 .headerLinks{
     display: flex;
@@ -57,16 +57,17 @@ body {
     color: var(--color-primary);
 }
 
-.curriculum {
+.curriculum{
     background: var(--color-primary);
-    color: var(--color-light);
-    padding: 0.5rem 1rem;
+    color: white !important;
+    padding: 0rem 1rem;
     border-radius: 25px;
     transition: var(--transition);
 }
 
 .curriculum:hover {
     background: var(--color-secondary);
+    color: black !important;
 }
 
 .mainSection {
@@ -81,9 +82,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 2rem;
     background-color: var(--color-light);
-    min-height: 60rem;
+    min-height: 50rem;
     height: auto;
     gap: 2rem;
 }
@@ -221,44 +222,26 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap:10rem;
-    margin-bottom: 1rem;
-}
-
-.icon{
-    width: 3rem !important;
-    height: 3rem !important;
-    border-radius: 5px;
-    
+    gap:13rem;
+    margin-top: 1rem;
 }
 
 .icon:hover {
-    transform: translateY(-5px);
+    transform:scale(1.1);
 }
 
-.phone svg, .email svg{
-    width: 13rem;
-
+.git, .linkedin, .phone, .email {
+    color: black;
+    width: 2rem;
+    height: auto;
 }
-/*
-.git, .linkedin {
-    width: 3rem;
-    height: 150px;
-    border-radius: 5px;
-}*/
-
-
-
 
 /* Footer */
 .footer {
     text-align: center;
-    padding: 2rem;
     background: var(--color-light);
     color: var(--color-gray);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 1.5rem;
 }
 
 

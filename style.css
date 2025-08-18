@@ -66,14 +66,14 @@ body {
 }
 
 .curriculum:hover {
-    background: var(--color-secondary);
-    color: black !important;
+    background-color: #3c75f1;
 }
+/*fin header*/
 
 .mainSection {
     max-width: 80%;
     margin: 0 auto;
-    padding: 2rem;
+    padding-top: 2rem;
 }
 
 /* intro */
@@ -82,11 +82,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
     background-color: var(--color-light);
-    min-height: 50rem;
+    min-height: 40rem;
     height: auto;
-    gap: 2rem;
 }
 .introBox h1{
     font-size: 2rem;
@@ -115,11 +113,11 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap:1rem;
+    gap:1.5rem;
 }
 .technologies svg, .technologie{
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: block;
     flex: 0 0 auto;
 }
@@ -150,7 +148,7 @@ body {
 
 /* sections */
 section {
-    padding: 3rem 2rem;
+    padding: 3rem 0rem;
 }
 
 h1 {
@@ -162,7 +160,7 @@ h1 {
 /* Projects */
 .projectsContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -172,9 +170,10 @@ h1 {
 
 .project {
     background: var(--color-light);
-    border-radius: 15px;
     overflow: hidden;
     transition: var(--transition);
+        width: 100%;
+        margin: 0;
 }
 
 .project:hover {
@@ -215,7 +214,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 .icons {
     display: flex;
@@ -232,7 +231,7 @@ h1 {
 
 .git, .linkedin, .phone, .email {
     color: black;
-    width: 2rem;
+    width: 2.2rem;
     height: auto;
 }
 

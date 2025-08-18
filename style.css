@@ -51,6 +51,7 @@ body {
     color: var(--color-dark);
     margin: 0 1rem;
     transition: var(--transition);  
+    white-space: nowrap;
 }
 
 .headerLinks a:hover {
@@ -286,6 +287,10 @@ h1 {
     }
     .headerLinks{
         width: 100%;
+    }
+
+    .curriculum{
+        padding: 0;
     }
     .intro {
         flex-direction: column;

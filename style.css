@@ -247,16 +247,8 @@ h1 {
 
 /* Tablet*/
 @media (max-width: 1024px) and (min-width: 768px) {
-    .header {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
     .headerLinks {
         width: 100%;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 0.5rem;
     }
 
     .intro {
@@ -266,10 +258,7 @@ h1 {
 
     .introData {
         max-width: 100%;
-    }
-
-    .logoIntro {
-        max-height: 20rem;
+        padding: 1rem;
     }
 
     .logoIntro img{
@@ -281,12 +270,23 @@ h1 {
     }
 
     .icons {
-        gap: 5rem;
+        gap: 6rem;
     }
 }
 
 /* Movil */
 @media (max-width: 767px) {
+    .header{
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;;
+    }
+    .headerLinks{
+        width: 100%;
+    }
     .intro {
         flex-direction: column;
         gap: 1rem;

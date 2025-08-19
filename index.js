@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
 
+    //Animación para cada apartado
     gsap.utils.toArray(".box").forEach((el) => {
       gsap.from(el, {
         opacity: 0,
@@ -8,14 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
         duration: 1.5,
         ease: "power2.out",
         scrollTrigger: {
-          trigger: el,           // <= ¡sí existe!
+          trigger: el,          
           start: "top bottom",
           toggleActions: "play none none none"
         }
       });
     });
 
-    // Si además quieres animar cada .project con stagger cuando aparece .projects:
+    //Animar cada project por separado
     gsap.from(".project", {
       opacity: 0,
       y: 30,

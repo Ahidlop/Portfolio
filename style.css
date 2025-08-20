@@ -40,21 +40,18 @@ body {
     z-index: 100;
     max-height: 2rem;
 }
-.headerLinks{
-    display: flex;
-    justify-content: space-between;
-    width:80%;
-    align-items: center;
-}
-.headerLinks a {
+
+.header a {
     text-decoration: none;
+    display: flex;
+    white-space: nowrap;
     color: var(--color-dark);
     margin: 0 1rem;
     transition: var(--transition);  
-    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.headerLinks a:hover {
+.header a:hover {
     color: var(--color-primary);
 }
 
@@ -300,19 +297,15 @@ h1 {
 /* Movil */
 @media (max-width: 768px) {
     .header{
-        font-size: 0.9rem;
-        display: flex;
-        justify-content: space-between;
-        padding: 0rem;
-        padding-top: 0.1rem;
-        padding-bottom: 0.1rem;;
+        font-size: 0.8rem;
     }
-    .headerLinks{
-        width: 100%;
+    .header a{
+        justify-self: center;
     }
 
     .curriculum{
-        padding: 0;
+        padding: 0.1rem 0.2rem;
+        border-radius: 15px;
     }
 
     .mainSection{
@@ -383,3 +376,13 @@ h1 {
     }
 }
 
+@media(max-width: 400px){
+    .header{
+        font-size: 0.8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:0.5rem;
+        padding-top: 0;
+        padding-bottom: 3.5rem;
+    }
+}
